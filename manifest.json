@@ -1,0 +1,21 @@
+{
+  "name": "Twitter Celebrity Name Swapper",
+  "version": "1.0",
+  "description": "Swaps your twitter feed names with those of celebrities",
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+  }],
+  /*"background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },*/
+  "browser_action": {
+    "default_title": "Twitter Name Changer",
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "manifest_version": 2
+}
